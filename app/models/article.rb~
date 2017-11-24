@@ -1,0 +1,3 @@
+class Article < ApplicationRecord
+	validates :body, :title, presence: {messaged: "el campo no puede estar vacío"}
+end
