@@ -26,5 +26,5 @@ user.articles.find(1).categories << Category.find_by_name('Programming')
 article = user.articles.first
 article.comments.create name: "invitado", email: "invitado@test.com", body: "articulo estupendo"
 article = user.articles.last
-2.times {|n| article.comments.create! name: "invitado# {n}", email: "invitado#{n}@test.com", body: "muy bueno invitado# {n}"}
+2.times {|n| article.comments.create! name: "invitado #{n}", email: "invitado#{n}@test.com", body: "muy bueno invitado #{n}"}
 
